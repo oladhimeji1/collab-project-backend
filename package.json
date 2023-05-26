@@ -4,7 +4,7 @@
   "description": "NodeJs backend for collab",
   "main": "index.js",
   "scripts": {
-    "start": "Node start index.js"
+    "start": "Node index.js"
   },
   "author": "Oladhimeji",
   "license": "ISC",
