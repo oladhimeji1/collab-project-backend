@@ -7,10 +7,11 @@ const userInfo = require('./model/model')
 
 const PORT = process.env.PORT || 5000;
 const app = express();
+const dbURI = 'mongodb+srv://ola:oladimeji2a@exammalpractice.we3g5we.mongodb.net/exammalpractice?retryWrites=true&w=majority';
 
 // Connecting to mongodb database
 mongoose.set('strictQuery', false);
-mongoose.connect(process.env.dbURI)
+mongoose.connect(dbURI)
     .then(result => {
         console.log('Connected to mongodb online');
         app.listen(PORT,() => console.log(`Running on port ${PORT}`))
