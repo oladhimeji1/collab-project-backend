@@ -59,7 +59,7 @@ app.post('/add-user', (req, res)=>{
         .catch(err => console.log(err))
 })
 
-// Counting data to the database
+// Counting data in the database
 app.post('/count', (req, res)=>{
     userInfo.find(req.body).count()
         .then(result=>{
